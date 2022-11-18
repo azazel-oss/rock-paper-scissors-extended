@@ -14,7 +14,7 @@ function Header(props) {
       </div>
       <div>
         <div>Score</div>
-        <div>11</div>
+        <div>{props.score}</div>
       </div>
     </header>
   );
