@@ -14,7 +14,7 @@ function Result(props) {
       clearTimeout(timer);
     };
   }, []);
-  export function decideResult(playerChoice, botChoice) {
+  function decideResult(playerChoice, botChoice) {
     const playerIndex = choices.findIndex(
       (element) => element === playerChoice
     );
@@ -23,10 +23,22 @@ function Result(props) {
     switch (Math.abs(difference)) {
       case 1:
       case 3:
-        return difference > 0 ? "won" : "lost";
+        if (difference > 0) {
+          props.setScore((prevState) => prevState + 1);
+          return "won";
+        } else {
+          props.setScore((prevState) => prevState - 1);
+          return "lost";
+        }
       case 2:
       case 4:
-        return difference > 0 ? "lost" : "won";
+        if (difference > 0) {
+          props.setScore((prevState) => prevState - 1);
+          return "lost";
+        } else {
+          props.setScore((prevState) => prevState + 1);
+          return "won";
+        }
       default:
         return "drew";
     }
