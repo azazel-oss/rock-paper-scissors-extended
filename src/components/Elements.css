@@ -9,16 +9,18 @@
   margin: 0 auto;
 }
 
-.element {
+.elements .element {
+  width: 35px;
+  height: 35px;
   position: absolute;
+}
+.element {
   background-image: radial-gradient(
     circle at 50% bottom,
     white,
     white 80%,
     hsl(217, 16%, 80%) 85%
   );
-  width: 35px;
-  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,32 +32,47 @@
   width: 60%;
 }
 
-.element-scissors {
+.elements .element-scissors {
   top: 10px;
   left: 125px;
+}
+
+.element-scissors {
   border: 10px solid hsl(39, 89%, 49%);
 }
 
-.element-paper {
+.elements .element-paper {
   top: 85px;
   right: 30px;
+}
+
+.element-paper {
   border: 10px solid hsl(230, 89%, 62%);
 }
 
-.element-spock {
+.elements .element-spock {
   top: 85px;
   left: 30px;
+}
+
+.element-spock {
   border: 10px solid hsl(189, 59%, 53%);
 }
 
-.element-lizard {
+.elements .element-lizard {
   bottom: 10px;
   left: 60px;
+}
+
+.element-lizard {
   border: 10px solid hsl(261, 73%, 60%);
 }
 
-.element-rock {
+.elements .element-rock {
   bottom: 10px;
   right: 65px;
+}
+
+.element-rock {
   border: 10px solid hsl(349, 71%, 52%);
 }

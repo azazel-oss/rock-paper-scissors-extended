@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header.jsx";
 import Elements from "./components/Elements.jsx";
 import Result from "./components/Result.jsx";
+import Rules from "./components/Rules.jsx";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           />
         )}
       </main>
+      <Rules />
     </React.Fragment>
   );
 }
