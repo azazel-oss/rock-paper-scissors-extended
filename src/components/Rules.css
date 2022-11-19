@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+}
+.btn-rules {
+  width: 150px;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 15px 40px;
+  border: solid 2px hsl(217, 16%, 45%);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin: 20px auto;
+}
