@@ -4,11 +4,11 @@ import paper from "../assets/images/icon-paper.svg";
 import scissors from "../assets/images/icon-scissors.svg";
 import lizard from "../assets/images/icon-lizard.svg";
 import spock from "../assets/images/icon-spock.svg";
+import "./Elements.css";
 
 function Elements(props) {
   return (
-    <div>
-      <div className={"chasis"}></div>
+    <div className={"elements"}>
       <div
         onClick={() => props.onSelect("rock")}
         className="element element-rock"

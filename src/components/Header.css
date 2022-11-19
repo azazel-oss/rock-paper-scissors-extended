@@ -1,0 +1,30 @@
+header {
+  width: 75%;
+  margin: 20px auto;
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  padding: 17px 25px 12px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scorecard {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background-color: white;
+  padding: 10px 40px;
+  margin: 7px;
+  border-radius: 5px;
+}
+
+.scorecard__title {
+  color: hsl(229, 64%, 46%);
+}
+
+.scorecard__score {
+  color: hsl(229, 25%, 31%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}

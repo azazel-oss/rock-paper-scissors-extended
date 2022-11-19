@@ -1,0 +1,61 @@
+.elements {
+  background-image: url("../assets/images/bg-pentagon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  position: relative;
+  height: 300px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.element {
+  position: absolute;
+  background-image: radial-gradient(
+    circle at 50% bottom,
+    white,
+    white 80%,
+    hsl(217, 16%, 80%) 85%
+  );
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.element img {
+  width: 60%;
+}
+
+.element-scissors {
+  top: 10px;
+  left: 125px;
+  border: 10px solid hsl(39, 89%, 49%);
+}
+
+.element-paper {
+  top: 85px;
+  right: 30px;
+  border: 10px solid hsl(230, 89%, 62%);
+}
+
+.element-spock {
+  top: 85px;
+  left: 30px;
+  border: 10px solid hsl(189, 59%, 53%);
+}
+
+.element-lizard {
+  bottom: 10px;
+  left: 60px;
+  border: 10px solid hsl(261, 73%, 60%);
+}
+
+.element-rock {
+  bottom: 10px;
+  right: 65px;
+  border: 10px solid hsl(349, 71%, 52%);
+}

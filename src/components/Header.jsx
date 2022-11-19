@@ -1,20 +1,16 @@
 import React from "react";
+import logo from "../assets/images/logo-bonus.svg";
+import "./Header.css";
 
 function Header(props) {
   return (
     <header>
       <div>
-        <ul>
-          <li>Rock</li>
-          <li>Paper</li>
-          <li>Scissors</li>
-          <li>Lizard</li>
-          <li>Spock</li>
-        </ul>
+        <img src={logo} alt={"rock paper scissors logo"} />
       </div>
-      <div>
-        <div>Score</div>
-        <div>{props.score}</div>
+      <div className={"scorecard"}>
+        <div className={"scorecard__title"}>Score</div>
+        <div className={"scorecard__score"}>{props.score}</div>
       </div>
     </header>
   );
