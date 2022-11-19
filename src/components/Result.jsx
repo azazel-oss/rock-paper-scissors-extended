@@ -37,19 +37,51 @@ function Result(props) {
       case 1:
       case 3:
         if (difference > 0) {
-          props.setScore((prevState) => prevState + 1);
+          props.setScore((prevState) => {
+            window.localStorage.setItem(
+              "score",
+              JSON.stringify({
+                score: prevState + 1,
+              })
+            );
+            return prevState + 1;
+          });
           return "won";
         } else {
-          props.setScore((prevState) => prevState - 1);
+          props.setScore((prevState) => {
+            window.localStorage.setItem(
+              "score",
+              JSON.stringify({
+                score: prevState - 1,
+              })
+            );
+            return prevState - 1;
+          });
           return "lost";
         }
       case 2:
       case 4:
         if (difference > 0) {
-          props.setScore((prevState) => prevState - 1);
+          props.setScore((prevState) => {
+            window.localStorage.setItem(
+              "score",
+              JSON.stringify({
+                score: prevState - 1,
+              })
+            );
+            return prevState - 1;
+          });
           return "lost";
         } else {
-          props.setScore((prevState) => prevState + 1);
+          props.setScore((prevState) => {
+            window.localStorage.setItem(
+              "score",
+              JSON.stringify({
+                score: prevState + 1,
+              })
+            );
+            return prevState + 1;
+          });
           return "won";
         }
       default:

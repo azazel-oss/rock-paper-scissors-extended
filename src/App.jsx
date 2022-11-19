@@ -8,7 +8,9 @@ import "./App.css";
 function App() {
   const [canSelect, setCanSelect] = useState(true);
   const [selectedMove, setSelectedMove] = useState("");
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(
+    JSON.parse(window.localStorage.getItem("score"))?.score || 0
+  );
   function elementSelectHandler(move) {
     setCanSelect(false);
     setSelectedMove(move);
