@@ -11,7 +11,7 @@ function Rules() {
         Rules
       </button>
       <div className={`modal ${isHidden ? "hidden" : ""}`}>
-        <div>Rules</div>
+        <div className={"rules__head"}>Rules</div>
         <div className={"rules-img-container"}>
           <img src={rules} alt={"rules"} />
         </div>
