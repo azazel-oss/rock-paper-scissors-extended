@@ -55,3 +55,19 @@
   border-radius: 10px;
   font-size: 1.2rem;
 }
+@media screen and (min-width: 1000px) {
+  .choices {
+    gap: 20rem;
+  }
+  .choices .element {
+    width: 160px;
+    height: 160px;
+  }
+  .result {
+    position: relative;
+    top: -15rem;
+  }
+  .btn-reset {
+    width: 8rem;
+  }
+}
